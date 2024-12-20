@@ -1,16 +1,49 @@
-# 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
-my_number = gets.chomp.to_i
+def continue_message
+  puts "Hit Enter if you would like to continue:"
+  continue_response = gets.chomp
 
-if my_number == 10
+  if continue_response.empty?
+    system("clear")
+    puts "Great! Let's continue."
+  else
+    puts "Goodbye!"
+    exit
+  end
+end
+
+# 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
+puts "Enter a number:"
+input1 = gets.chomp.to_i
+
+if input1 == 10
   puts 0
 else
   puts -1
 end
 
+continue_message
+
 
 # 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
 
+puts "Enter another number:"
+input = gets.chomp.to_i
+
+if input2 < 10
+  puts -1
+elsif input2 > 10
+  puts 1
+else
+  puts 0
+end
+
+continue_message
+
 # 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+puts "Enter two numbers:"
+input3 = gets.chomp.to_i
+input4 = gets.chomp.to_i
 
 # 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
 
